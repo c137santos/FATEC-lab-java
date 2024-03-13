@@ -3,13 +3,19 @@ public class img05droga {
     private Double posologia;
     private Double preco;
 
+    public img05droga(String nome, Double posologia, Double preco) {
+        this.nome = nome;
+        this.posologia = posologia;
+        this.preco = preco;
+    }
+
     public double overdosar() {
         // implementation goes here
-        return 0.0;
+        return 10.0;
     };
     public String usar() {
         // implementation goes here
-        return "str";
+        return "Sim";
     };
 
     public boolean legalizar() {

@@ -1,4 +1,4 @@
-public class imv10ovnis {
+public class img10ovnis {
     private String formato;
     private double velocidade;
     private String paisVisto;

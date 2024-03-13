@@ -1,11 +1,17 @@
-public class img02erva {
+public class img03cogumelo {
     private String nome;
     private String cor;
     private String especie;
 
+    public img03cogumelo(String nome, String cor, String especie) {
+        this.nome = nome;
+        this.cor = cor;
+        this.especie = especie;
+    };
+
     public String alastrar() {
         // implementation goes here
-        return "str";
+        return "alastrando....";
     }
 
     public boolean crescer() {

@@ -1,3 +1,4 @@
+package Atividade01;
 
 /* Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo
 por mês, mais uma comissão também fixa para cada carro vendido e

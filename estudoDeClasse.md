@@ -47,4 +47,4 @@
 
 ### Ovnis (Classe: Ovnis)
 
-![alt text](./img/imageOvnis.png)
+![alt text](./img/imageovnis.png)

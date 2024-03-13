@@ -3,6 +3,12 @@ public class img06livro {
     private int ano;
     private String titulo;
 
+    public img06livro(String autor, int ano, String titulo) {
+        this.autor = autor;
+        this.ano = ano;
+        this.titulo = titulo;
+    }
+
     public void abrir() {
         // implementation goes here
     }
