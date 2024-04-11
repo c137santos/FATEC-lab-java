@@ -2,23 +2,15 @@ package Atividade03;
 
 public class CalculoSoma02 {
     public static void main(String []args){
-        Calculadora f1 = new Calculadora(2,5);
-        Calculadora f2 = new Calculadora(3, 7);
+        Calculadora f1 = new Calculadora(4,3);
+        Calculadora f2 = new Calculadora(2, 5);
         String resultado = f1.soma(f2);
-        Calculadora f3 = new Calculadora(3,2)
         System.out.println(resultado);
+        int meio = resultado.length() / 2;
+        Calculadora f3 = new Calculadora(Integer.parseInt(resultado.substring(0, meio)), Integer.parseInt(resultado.substring(meio+1)));
+        Calculadora f4 = new Calculadora(3, 2);
+        String resultado_final = f4.soma(f3);
+        System.out.println(resultado_final);
 
-    }
+    };
 }
-
-
-/* f1 = 2/5
- * f2 = 3/7 
- * numerador = 2
- * denominador = 5
- * numeradorSegundoTermo = 3
- * denominadorSegundoTermo = 7
- * numeradorResultante = 29
- * denominadorResultante = 35
- * resultado = 29 / 35
- */

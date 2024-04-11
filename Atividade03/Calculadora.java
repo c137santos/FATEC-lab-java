@@ -23,7 +23,7 @@ public class Calculadora {
             numeradorResultante = (numerador * denominadorSegundoTermo) + (numeradorSegundoTermo * denominador);
             denominadorResultante = denominador * denominadorSegundoTermo;
         }
-        return numeradorResultante + " / " + denominadorResultante;
+        return numeradorResultante + "/" + denominadorResultante;
     }
 
     public String subtracao(Calculadora segundaFracao){
@@ -31,7 +31,7 @@ public class Calculadora {
         int denominadorSegundoTermo = segundaFracao.denominador;
         
         if (denominador == denominadorSegundoTermo) {
-            return (numerador - numeradorSegundoTermo)  + " / " + denominador;
+            return (numerador - numeradorSegundoTermo)  + "/" + denominador;
         }
         
         
@@ -44,10 +44,10 @@ public class Calculadora {
             mmc = denominadorSegundoTermo;
         }
 
-        while ((mmc % denominador) != 0 && (mmc % denominadorSegundoTermo != 0)) {
+        while ((mmc % denominador) != 0 || (mmc % denominadorSegundoTermo != 0)) {
             mmc++;
         }
-        return numerador - denominador + " / " + mmc;
+        return (numerador * denominadorSegundoTermo) - (numeradorSegundoTermo * denominador) + "/" + mmc;
 
     }
 
