@@ -55,7 +55,7 @@ public class Calculadora {
         int numeradorSegundoTermo = segundaFracao.numerador;
         int denominadorSegundoTermo = segundaFracao.denominador;
 
-        return numerador*numeradorSegundoTermo + " / " + numeradorSegundoTermo*denominadorSegundoTermo;
+        return numerador*numeradorSegundoTermo + " / " + denominador*denominadorSegundoTermo;
     }
 
     public String divisao(Calculadora segundaFracao){
