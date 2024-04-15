@@ -1,0 +1,30 @@
+
+public class img05droga {
+    private String nome;
+    private Double posologia;
+    private Double preco;
+    private boolean legalizada;
+
+    public img05droga(String nome, Double posologia, Double preco, boolean legalizada) {
+        this.nome = nome;
+        this.posologia = posologia;
+        this.preco = preco;
+        this.legalizada = legalizada;
+    }
+
+    public double overdosar() {
+        double posologiaMultiplicada = posologia * 3;
+        return this.posologia = posologiaMultiplicada;
+    };
+
+    public void usar() {
+        System.out.println("Você está usando a droga " + this.nome);
+    };
+
+    public boolean legalizar() {
+        this.legalizada = !this.legalizada;;
+        return this.legalizada;
+    }
+    
+}
+
