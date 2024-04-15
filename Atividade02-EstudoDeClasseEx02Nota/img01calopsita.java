@@ -3,6 +3,12 @@ public class img01calopsita {
     private String cor;
     private String mutacao;
 
+    public img01calopsita(int idade, String cor, String mutacao) {
+        this.idade = idade;
+        this.cor = cor;
+        this.mutacao = mutacao;
+    }
+
     public String cantar() {
         // Implementação do método cantar
         return "A calopsita está cantando!";

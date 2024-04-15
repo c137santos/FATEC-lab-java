@@ -14,7 +14,7 @@ public class img04orgaos {
     }
 
     public String inflamar() {
-        return "inflamando...";
+        return "O" + this.nome + "está sofrendo...";
 
     }
 
