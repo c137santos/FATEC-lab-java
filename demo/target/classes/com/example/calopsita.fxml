@@ -19,7 +19,7 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField layoutX="273.0" layoutY="283.0" promptText="idade">
+      <TextField layoutX="273.0" layoutY="283.0" promptText="idadeFx">
          <font>
             <Font size="24.0" />
          </font>

@@ -10,13 +10,17 @@ public class CalopsitaController {
     ObservableList<String> calopsitas = FXCollections.observableArrayList();
 
     @FXML
-    private TextField corCalopsita;
+    private TextField corFx;
+    private TextField mutacaofx;
+    private TextField idadeFx;
 
 
     public void sendCalopsita() {
-        String cor = corCalopsita.getText();
+        String cor = corFx.getText();
         calopsitas.add(cor);
     }
+
+    public
 
     
 }
