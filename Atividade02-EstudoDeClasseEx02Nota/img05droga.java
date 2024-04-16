@@ -2,13 +2,11 @@
 public class img05droga {
     private String nome;
     private Double posologia;
-    private Double preco;
     private boolean legalizada;
 
-    public img05droga(String nome, Double posologia, Double preco, boolean legalizada) {
+    public img05droga(String nome, Double posologia, boolean legalizada) {
         this.nome = nome;
         this.posologia = posologia;
-        this.preco = preco;
         this.legalizada = legalizada;
     }
 

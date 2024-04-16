@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+   xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" xmlns:fx="java.com.example.CalopsitaController" >
+   <children>
+      <TextField layoutX="273.0" layoutY="100.0" promptText="mutação" fx:id="mutacaofx">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="273.0" layoutY="189.0" promptText="cor" fx:id="corFx">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="273.0" layoutY="283.0" promptText="idade">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Text layoutX="223.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calopsita">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
