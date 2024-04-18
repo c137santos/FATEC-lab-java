@@ -6,20 +6,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
- xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
    <children>
-      <TextField fx:id="mutacaoFx" layoutX="31.0" layoutY="94.0" promptText="Mutação">
+      <TextField fx:id="mutacaoFx" layoutX="144.0" layoutY="63.0" promptText="Mutação">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField fx:id="corFx" layoutX="31.0" layoutY="177.0" promptText="Cor">
+      <TextField fx:id="corFx" layoutX="144.0" layoutY="122.0" promptText="Cor">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField fx:id="idadeFx" layoutX="31.0" layoutY="270.0" promptText="idadeFx">
+      <TextField fx:id="idadeFx" layoutX="144.0" layoutY="189.0" promptText="idadeFx">
          <font>
             <Font size="24.0" />
          </font>
@@ -29,11 +28,15 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Button layoutX="368.0" layoutY="177.0" mnemonicParsing="false" text="Formar Objeto"
-      fx:id="meuBotao" onAction="#handleButtonAction">
+      <Button fx:id="meuBotao" layoutX="185.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Formar Objeto">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
+      <Text fx:id="ResultadoFx" layoutX="212.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
