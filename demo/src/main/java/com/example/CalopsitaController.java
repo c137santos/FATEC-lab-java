@@ -1,14 +1,14 @@
 package com.example;
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
-import javafx.stage.Stage;
+import javafx.scene.text.Text;
 import javafx.scene.Scene;
-import java.io.IOException;
 
 public class CalopsitaController {
 
@@ -26,12 +26,13 @@ public class CalopsitaController {
     private TextField idadeFx;
 
     @FXML
-    private static TextField ResultadoFx;
+    private Text ResultadoFx;
 
     @FXML
     private Button meuBotao;
 
-    public static void setResultadoInScene() {
+    @FXML
+    public void setResultadoInScene() {
         ResultadoFx.setText("Calopsita cadastrada com sucesso!");
     }
 
@@ -43,10 +44,15 @@ public class CalopsitaController {
         String idade = idadeFx.getText();
         calopsitas.add(idade);
         System.err.println(calopsitas);
+
+        this.setResultadoInScene();
     }
     
     @FXML
     public void handleButtonAction(ActionEvent event) {
+        System.out.println(corFx);
+        System.out.println(mutacaoFx);
+        System.out.println(idadeFx);
         if (corFx != null && mutacaoFx != null && idadeFx != null) {
             System.out.println("Tudo preenchido");
             this.sendCalopsita();
