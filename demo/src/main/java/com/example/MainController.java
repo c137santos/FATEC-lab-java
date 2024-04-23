@@ -3,6 +3,7 @@ package com.example;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
+import javafx.event.ActionEvent;
 
 public class MainController {
 
@@ -19,21 +20,15 @@ public class MainController {
     private Text text;
 
     @FXML
-    public void initialize() {
-        calopsitasButton.setOnAction(event -> handleCalopsitasButtonClick());
-        drogasButton.setOnAction(event -> handleDrogasButtonClick());
-        orgaoButton.setOnAction(event -> handleOrgaoButtonClick());
+    private void handleCalopsitasButtonClick(ActionEvent event) {
+        System.out.println("Tudo preenchido");
     }
-
-    private void handleCalopsitasButtonClick() {
-        // Código para lidar com o clique no botão "Calopsitas"
+    @FXML
+    private void handleDrogasButtonClick(ActionEvent event) {
+        System.out.println("Tudo preenchido");
     }
-
-    private void handleDrogasButtonClick() {
-        // Código para lidar com o clique no botão "Drogas"
-    }
-
-    private void handleOrgaoButtonClick() {
-        // Código para lidar com o clique no botão "Órgão"
+    @FXML
+    private void handleOrgaoButtonClick(ActionEvent event) {
+        System.out.println("Tudo preenchido");
     }
 }
