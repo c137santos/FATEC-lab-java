@@ -8,34 +8,35 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+   xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
    <children>
-      <TextField fx:id="mutacaofx" layoutX="21.0" layoutY="144.0" promptText="Mutação">
+      <TextField fx:id="mutacaofx" layoutX="31.0" layoutY="94.0" promptText="Mutação">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField fx:id="corFx" layoutX="21.0" layoutY="246.0" promptText="Cor">
+      <TextField fx:id="corFx" layoutX="31.0" layoutY="177.0" promptText="Cor">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField fx:id="idadeFx" layoutX="21.0" layoutY="357.0" promptText="Idade">
+      <TextField fx:id="idadeFx" layoutX="31.0" layoutY="270.0" promptText="Idade">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <Text layoutX="265.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calopsita" wrappingWidth="218.33984375">
+      <Text layoutX="232.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calopsita">
          <font>
-            <Font size="36.0" />
+            <Font size="24.0" />
          </font>
       </Text>
-      <Button fx:id="meuBotao" layoutX="437.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Formar Objeto">
+      <Button fx:id="meuBotao" layoutX="368.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Formar Objeto">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <ImageView fitHeight="221.0" fitWidth="449.0" layoutX="367.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image-2.png" />
          </image>

@@ -3,6 +3,9 @@ package com.example;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
+
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 
 public class MainController {
@@ -21,14 +24,27 @@ public class MainController {
 
     @FXML
     private void handleCalopsitasButtonClick(ActionEvent event) {
-        System.out.println("Tudo preenchido");
+        try {
+            App.setRoot("calopsita");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+    
     @FXML
     private void handleDrogasButtonClick(ActionEvent event) {
-        System.out.println("Tudo preenchido");
+        try {
+            App.setRoot("droga");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     @FXML
     private void handleOrgaoButtonClick(ActionEvent event) {
-        System.out.println("Tudo preenchido");
+        try {
+            App.setRoot("orgao");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
