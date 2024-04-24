@@ -31,17 +31,17 @@
       </Text>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="63.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../calopsi.jpg" />
+            <Image url="@calopsi.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="555.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../coracao.jpg" />
+            <Image url="@coracao.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="310.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="310.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../drogs.png" />
+            <Image url="@drogs.png" />
          </image>
       </ImageView>
    </children>
