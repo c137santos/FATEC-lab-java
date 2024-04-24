@@ -50,15 +50,15 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Button fx:id="botaoCantar" layoutX="302.0" layoutY="401.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" text="Cantar">
+      <Button fx:id="botaoCantar" onAction="#botaoCantar" layoutX="302.0" layoutY="401.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" text="Cantar">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button fx:id="botaoVoar" layoutX="430.0" layoutY="401.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" text="Voar">
+      <Button fx:id="botaoVoar" onAction="#botaoVoar" layoutX="430.0" layoutY="401.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" text="Voar">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button fx:id="botaoTemp" layoutX="556.0" layoutY="401.0" mnemonicParsing="false" text="Temperamento">
+      <Button fx:id="botaoTemp" onAction="#botaoTemp" layoutX="556.0" layoutY="401.0" mnemonicParsing="false" text="Temperamento">
          <font>
             <Font size="18.0" />
          </font></Button>

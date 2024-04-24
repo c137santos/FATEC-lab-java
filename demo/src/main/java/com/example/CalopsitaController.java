@@ -80,6 +80,18 @@ public class CalopsitaController {
     }
 
     @FXML
+    public void botaoVoar(ActionEvent event) {
+        String cor = calopsita.getVoo();
+        tCampoResp.setText("Calopsita "+ cor + " no céu");
+    }
+
+    @FXML
+    public void botaoTemp(ActionEvent event) {
+        String idade = calopsita.getIdade();
+        tCampoResp.setText("com "+ idade +" anos. Ela é braba");
+    }
+
+    @FXML
     public void handleButtonAction(ActionEvent event) {
         System.out.println(corFx);
         System.out.println(mutacaoFx);

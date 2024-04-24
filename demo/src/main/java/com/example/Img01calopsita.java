@@ -14,6 +14,11 @@ public class Img01calopsita {
     public String getMutacao() {
         return this.mutacao;
     }
+
+    public String getVoo() {
+        return this.cor;
+    }
+
     public String cantar() {
         return ", a calopsita, tá cantando!";
     }
@@ -23,8 +28,8 @@ public class Img01calopsita {
         return true;
     }
 
-    public String tipo_racao() {
+    public String getIdade() {
         // Implementação do método tipo_racao
-        return "Ração especial para calopsitas";
+        return this.idade;
     }
 }
