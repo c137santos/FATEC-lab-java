@@ -29,7 +29,16 @@ public class CalopsitaController {
     private Button meuBotao;
 
     @FXML
-    private Text tCantando;
+    private Button botaoCantar;
+
+    @FXML
+    private Button botaoVoar;
+
+    @FXML
+    private Button botaoTemp;
+
+    @FXML
+    private Text tCampoResp;
 
     @FXML
     public void setResultadoInScene(String cor, String mutacao, String idade) {
@@ -43,7 +52,10 @@ public class CalopsitaController {
 
     @FXML
     public void initialize() {
-        tCantando.setVisible(false);
+        tCampoResp.setVisible(false);
+        botaoVoar.setVisible(false);
+        botaoCantar.setVisible(false);
+        botaoTemp.setVisible(false);
     }
 
     public void sendCalopsita() {
@@ -52,9 +64,8 @@ public class CalopsitaController {
         String idade = idadeFx.getText();
         Img01calopsita calopsita = new Img01calopsita();
         calopsita.createCalopsita(cor, mutacao, idade);
-        String cantando = calopsita.cantar();
-        tCantando.setText(cantando);
-        tCantando.setVisible(true);
+        tCampoResp.setText(calopsita.toString());
+        tCampoResp.setVisible(true);
     }
     
     @FXML

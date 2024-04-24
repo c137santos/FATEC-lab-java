@@ -8,9 +8,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
    <children>
-      <TextField fx:id="mutacaofx" layoutX="31.0" layoutY="94.0" promptText="Mutação">
+      <TextField fx:id="mutacaoFx" layoutX="31.0" layoutY="94.0" promptText="Mutação">
          <font>
             <Font size="24.0" />
          </font>
@@ -45,10 +45,22 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Text fx:id="tCantando" layoutX="368.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Você não criou sua calopsita">
+      <Text fx:id="tCampoResp" layoutX="478.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Você não criou sua calopsita">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
+      <Button fx:id="botaoCantar" layoutX="429.0" layoutY="401.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" text="Cantar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="botaoVoar" layoutX="557.0" layoutY="401.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" text="Voar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="botaoTemp" layoutX="683.0" layoutY="401.0" mnemonicParsing="false" text="Temperamento">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
    </children>
 </AnchorPane>
