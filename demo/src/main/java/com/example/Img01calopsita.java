@@ -10,9 +10,12 @@ public class Img01calopsita {
         this.mutacao = mutacao;
         this.idade = idade;
     }
-    
+
+    public String getMutacao() {
+        return this.mutacao;
+    }
     public String cantar() {
-        return "A calopsita está cantando!";
+        return ", a calopsita, tá cantando!";
     }
 
     public boolean voar() {

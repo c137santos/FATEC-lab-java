@@ -76,7 +76,7 @@ public class CalopsitaController {
     @FXML
     public void botaoCantar(ActionEvent event) {
         String cantando = calopsita.cantar();
-        tCampoResp.setText(cantando);
+        tCampoResp.setText(calopsita.getMutacao() + cantando);
     }
 
     @FXML
