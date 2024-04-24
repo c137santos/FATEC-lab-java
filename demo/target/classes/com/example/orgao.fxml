@@ -29,12 +29,12 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Button layoutX="142.0" layoutY="378.0" mnemonicParsing="false" text="Criar órgão">
+      <Button layoutX="47.0" layoutY="348.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="234.0" text="Criar órgão">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="buttonVoltar" layoutX="413.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleButtonActionVoltar" text="Voltar">
+      <Button fx:id="buttonVoltar" layoutX="47.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleButtonActionVoltar" prefHeight="46.0" prefWidth="234.0" text="Voltar">
          <font>
             <Font size="24.0" />
          </font>
@@ -44,5 +44,20 @@
             <Image url="@../../../../../Atividade02-EstudoDeClasseEx02Nota/img/imageorgao.png" />
          </image>
       </ImageView>
+      <Button layoutX="314.0" layoutY="386.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="120.0" text="regenerar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="462.0" layoutY="386.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="120.0" text="Funcionar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="606.0" layoutY="386.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="120.0" text="inflamar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
