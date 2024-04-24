@@ -8,8 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="748.0" 
-   xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CalopsitaController">
    <children>
       <TextField fx:id="mutacaofx" layoutX="31.0" layoutY="94.0" promptText="Mutação">
          <font>
@@ -26,17 +25,17 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Text layoutX="232.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calopsita">
+      <Text layoutX="302.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calopsita">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Button fx:id="meuBotao" layoutX="368.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Formar Objeto">
+      <Button fx:id="meuBotao" layoutX="264.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Criar Calopsita">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="266.0" fitWidth="355.0" layoutX="368.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image-2.png" />
          </image>

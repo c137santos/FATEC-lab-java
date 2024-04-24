@@ -30,7 +30,7 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Button fx:id="meuBotao" layoutX="264.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Criar Calopsita">
+      <Button fx:id="meuBotao" layoutX="59.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Criar Calopsita">
          <font>
             <Font size="24.0" />
          </font>
@@ -40,5 +40,11 @@
             <Image url="@image-2.png" />
          </image>
       </ImageView>
+      <Button fx:id="buttonVoltar" layoutX="413.0" layoutY="366.0" mnemonicParsing="false"
+         onAction="#handleButtonActionVoltar" prefHeight="46.0" prefWidth="232.0" text="Voltar">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -1,6 +1,8 @@
 package com.example;
 
 
+import java.io.IOException;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -56,6 +58,15 @@ public class CalopsitaController {
         if (corFx != null && mutacaoFx != null && idadeFx != null) {
             System.out.println("Tudo preenchido");
             this.sendCalopsita();
+        }
+    }
+
+    @FXML
+    public void handleButtonActionVoltar(ActionEvent event) {
+        try {
+            App.setRoot("main_screen");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
