@@ -31,7 +31,7 @@
       </Text>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="63.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@calopsi.png" />
+            <Image url="@calopsita.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="555.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
