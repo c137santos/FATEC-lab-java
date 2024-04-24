@@ -10,17 +10,17 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.DrogaController">
    <children>
-      <TextField layoutX="34.0" layoutY="93.0" promptText="Nome">
+      <TextField fx:id="nomeFx" layoutX="34.0" layoutY="93.0" promptText="Nome">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField layoutX="34.0" layoutY="171.0" promptText="Posologia">
+      <TextField fx:id="posologiaFx" layoutX="34.0" layoutY="171.0" promptText="Posologia">
          <font>
             <Font size="24.0" />
          </font>
       </TextField>
-      <TextField layoutX="34.0" layoutY="257.0" promptText="Legalizada">
+      <TextField fx:id="legalizacaoFx" layoutX="34.0" layoutY="257.0" promptText="Legalizada">
          <font>
             <Font size="24.0" />
          </font>
@@ -30,12 +30,12 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Button layoutX="83.0" layoutY="366.0" mnemonicParsing="false" text="Criar Droga">
+      <Button fx:id="buttonDroga" onAction="#handleButtonDroga"  layoutX="78.0" layoutY="333.0" mnemonicParsing="false" text="Criar Droga">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="buttonVoltar" layoutX="413.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleButtonActionVoltar" text="Voltar">
+      <Button fx:id="buttonVoltar" layoutX="78.0" layoutY="396.0" mnemonicParsing="false" onAction="#handleButtonActionVoltar" prefHeight="46.0" prefWidth="171.0" text="Voltar">
          <font>
             <Font size="24.0" />
          </font>
@@ -45,5 +45,22 @@
             <Image url="@../../../../../Atividade02-EstudoDeClasseEx02Nota/img/imageDroga.png" />
          </image>
       </ImageView>
+      <Button fx:id="botaoOver" onAction="#botaoOver" layoutX="270.0" layoutY="396.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="137.0" text="Overdosar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botaoUsar" onAction="#BotaoUser" layoutX="430.0" layoutY="396.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="137.0" text="Usar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="586.0" fx:id="botaoLegal" onAction="#botaoLegal" layoutY="396.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="137.0" text="Legalizar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
+
+fx:id="botaoCantar" onAction="#botaoCantar" 
