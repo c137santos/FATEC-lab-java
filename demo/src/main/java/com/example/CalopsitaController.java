@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.event.ActionEvent;
 import javafx.scene.text.Text;
 import javafx.scene.Scene;
@@ -12,6 +13,8 @@ import javafx.scene.Scene;
 public class CalopsitaController {
 
     private static Scene scene;
+
+    private Img01calopsita calopsita = new Img01calopsita();
 
     @FXML
     private TextField corFx;
@@ -62,12 +65,20 @@ public class CalopsitaController {
         String cor = corFx.getText();
         String mutacao = mutacaoFx.getText();
         String idade = idadeFx.getText();
-        Img01calopsita calopsita = new Img01calopsita();
         calopsita.createCalopsita(cor, mutacao, idade);
         tCampoResp.setText(calopsita.toString());
         tCampoResp.setVisible(true);
+        botaoVoar.setVisible(true);
+        botaoCantar.setVisible(true);
+        botaoTemp.setVisible(true);
     }
     
+    @FXML
+    public void botaoCantar(ActionEvent event) {
+        String cantando = calopsita.cantar();
+        tCampoResp.setText(cantando);
+    }
+
     @FXML
     public void handleButtonAction(ActionEvent event) {
         System.out.println(corFx);
