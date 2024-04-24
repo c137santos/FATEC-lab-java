@@ -2,9 +2,6 @@ package com.example;
 
 
 import java.io.IOException;
-
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -13,8 +10,6 @@ import javafx.scene.text.Text;
 import javafx.scene.Scene;
 
 public class CalopsitaController {
-
-    ObservableList<String> calopsitas = FXCollections.observableArrayList();
 
     private static Scene scene;
 
@@ -34,20 +29,32 @@ public class CalopsitaController {
     private Button meuBotao;
 
     @FXML
-    public void setResultadoInScene() {
-        ResultadoFx.setText("Calopsita cadastrada com sucesso!");
+    private Text tCantando;
+
+    @FXML
+    public void setResultadoInScene(String cor, String mutacao, String idade) {
+        try {
+            App.setRoot("instancia_calopsita");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @FXML
+    public void initialize() {
+        tCantando.setVisible(false);
     }
 
     public void sendCalopsita() {
         String cor = corFx.getText();
-        calopsitas.add(cor);
         String mutacao = mutacaoFx.getText();
-        calopsitas.add(mutacao);
         String idade = idadeFx.getText();
-        calopsitas.add(idade);
-        System.err.println(calopsitas);
-
-        this.setResultadoInScene();
+        Img01calopsita calopsita = new Img01calopsita();
+        calopsita.createCalopsita(cor, mutacao, idade);
+        String cantando = calopsita.cantar();
+        tCantando.setText(cantando);
+        tCantando.setVisible(true);
     }
     
     @FXML
