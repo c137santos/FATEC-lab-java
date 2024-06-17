@@ -50,7 +50,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="botaoUser" onAction="#botaoUser" layoutX="430.0" layoutY="396.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="137.0" text="Usar">
+      <Button fx:id="botaoUsar" onAction="#BotaoUser" layoutX="430.0" layoutY="396.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="137.0" text="Usar">
          <font>
             <Font size="18.0" />
          </font>
@@ -62,3 +62,5 @@
       </Button>
    </children>
 </AnchorPane>
+
+fx:id="botaoCantar" onAction="#botaoCantar" 
